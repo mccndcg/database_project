@@ -1,6 +1,6 @@
 from flask import Flask, render_template, make_response, jsonify, request, abort
 from pymongo import MongoClient
-source = 'mongodb+srv://m220student:m220student@sandbox.dggb2.mongodb.net/test?authSource=admin&replicaSet=atlas-g3cnn4-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
+source = 'mongodb+srv://mccndcg:ePRZiwIV5x3uU66Q@cluster0.spy9n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 client = MongoClient(source)
 db = client.testdb
 collection = db.testcoll
