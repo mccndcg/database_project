@@ -1,7 +1,7 @@
 
 
 const axios_instance = axios.create({
-  baseURL: 'project-database-bunbun.herokuapp.com',
+  baseURL: 'https://project-database-bunbun.herokuapp.com/',
   timeout: 1000,
   headers: {
     'X-Custom-Header': 'foobar',
