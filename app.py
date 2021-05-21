@@ -19,6 +19,7 @@ def find():
         print('OK')
         fetchedData = collection.find_one({"student_number": int(query['query'])})
     else:
+        print('enter here')
         fetchedData = collection.find_one({"name": query['query']})
     try:
         fetchedData.pop('_id')
