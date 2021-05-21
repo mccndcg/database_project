@@ -1,0 +1,41 @@
+.logo {
+  width:15%;
+  height:15%;
+  padding-top: 70px;
+}
+
+.eh {
+  width:8.3in;
+  height:11.7in;
+  background-color:powderblue
+}
+
+.center {
+  text-align: center;
+}
+
+.top {
+  margin-bottom: 50px;
+}
+
+.big {
+  font-size: 20px;
+}
+
+.content {
+  margin-right: 60px;
+  margin-left: 60px;
+
+}
+
+.indent {
+  text-indent: 50px;
+  word-spacing: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sign {
+  position: relative;
+  left: 100px;
+}

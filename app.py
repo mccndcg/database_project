@@ -11,6 +11,16 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/certificate')
+def certificate():
+    #details = request.get_json()
+    return render_template('report.html')
+
+@app.route('/maze/')
+@app.route('/maze/<name>')
+def maze(name=None):
+    return render_template('maze.html', name=name)
+
 @app.route('/fetchData', methods=('GET', 'POST'))
 def find():
     query = request.get_json()
