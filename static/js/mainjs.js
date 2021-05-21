@@ -1,7 +1,7 @@
 const CONN = 'https://project-database-bunbun.herokuapp.com/'
 
 const axios_instance = axios.create({
-  baseURL: CONN
+  baseURL: CONN,
   //baseURL: 'http://127.0.0.1:5000/',
   timeout: 1000,
   headers: {
