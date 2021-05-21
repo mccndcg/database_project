@@ -53,7 +53,7 @@ x.component('ok-message', {
       localStorage.setItem("course", this.course)
       localStorage.setItem("name", this.name)
       localStorage.setItem("updatedTime", this.updatedTime)
-      window.open(CONN+'/certificate')}
+      window.open(CONN+'certificate')}
   },
   template: `
     <div style="padding-top:50px;">
