@@ -19,13 +19,18 @@ def find():
         print('OK')
         fetchedData = collection.find_one({"student_number": int(query['query'])})
     else:
-        print('enter here')
-        fetchedData = collection.find_one({"name": query['query']})
+        try:
+            print('enter here')
+            fetchedData = collection.find_one({"name": query['query']})
+            print(fetchedData)
+        except:
+            print('error')
     try:
         fetchedData.pop('_id')
         print(fetchedData)
         return make_response(jsonify(fetchedData), 200)
     except AttributeError:
+        print('abortabort')
         return abort(404)
 
 if __name__ == '__main__':
