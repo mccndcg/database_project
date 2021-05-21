@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+      background: #111;
+      }
+    .ital {
+      font-style: italic;
+      color: grey;
+    }
+  </style>
+  <body>
+    <canvas style="position:fixed; top:0; left:0;"></canvas>
+    <div class="position-relative" id="test">
+      <div class="position-absolute top-0 start-50 translate-middle-x">
+        <search-form></search-form>
+      </div>
+    </div>
+  </body>
+  <script src="./static/js/zepto.min.js"></script>
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+  <script src="./static/js/vue.js"></script>
+  <script type="text/javascript" src="./static/js/axios.min.js"></script>
+  <script src="./static/js/mainjs.js"></script>
+  <script type="text/javascript">
+    const mountApp = x.mount('#test')
+  </script>
+
+  <script src="./static/js/cons.js"></script>
+</html>
