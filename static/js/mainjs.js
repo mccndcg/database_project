@@ -1,7 +1,7 @@
 
 
 const axios_instance = axios.create({
-  baseURL: 'https://project-database-bunbun.herokuapp.com/',
+  baseURL: 'http://127.0.0.1:5000',
   timeout: 1000,
   headers: {
     'X-Custom-Header': 'foobar',
@@ -88,7 +88,7 @@ x.component('search-form', {
     `,
   methods: {
     async fetchData() {
-      axios_instance({'method': 'get', 'url': 'fetchData', 'data': {'query': this.query}})
+      axios_instance.post('/fetchData', {'query': this.query})
       .then(response => {
         this.show = true
         this.fetchedData = response.data
