@@ -88,7 +88,7 @@ x.component('search-form', {
     `,
   methods: {
     async fetchData() {
-      axios_instance.post('/fetchData', {'query': this.query})
+      axios_instance({'method': 'get', 'url': 'fetchData', 'data': {'query': this.query}})
       .then(response => {
         this.show = true
         this.fetchedData = response.data
